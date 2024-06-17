@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+/*導覽列樣式設定*/
+body,
+ul {
+    margin: 0px;
+}
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+nav {
+    background-color: aqua;
+}
+nav ul {
+    display: flex;
+    justify-content: right;
+}
+nav li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(174, 201, 22);
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: blueviolet;
+    color: brown;
+    transition: background-color 1s linear, color 1s ease-in;
+}
+
+/*標題樣式*/
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 192, 203, 80%);
+}
+
+.title {
+    text-align: center;
+}
+
+/*照片樣式*/
+#photolist ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+}
+
+#photolist li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+#photolist img {
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px gray;
+}
+
+#photolistb.emptyltem {
+    width: 200px;
+}
+
+.gotop {
+    font-size: 60px;
+    color: blue;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}

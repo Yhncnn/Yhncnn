@@ -1,0 +1,119 @@
+@charset "utf-8";
+#content{
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgba(228, 142, 199, 0.5);
+    /*rgba 可以設透明度*/
+}
+/*視窗背景色設定*/
+body{
+    background-color: palevioletred;
+    background-image: url(../img/abc.jpg);
+    /* ../ 是跳出去找檔案 */
+    background-size: cover; 
+    /*  cover是填滿  */  
+}
+
+/*連結顏色設定*/
+.menu a {
+    color: crimson;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.menu a:hover{
+    background-color: rgb(12, 12, 133);
+}
+/*頁首,導覽,頁尾的共通設定*/
+
+
+/*導覽樣式設定*/
+.menu li{
+    list-style-type: none;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: aqua;
+}
+
+/*頁面標題設定*/
+h1{
+    margin: 0 auto;
+    background-color: blueviolet;
+    color: pink;
+    border: 5PX ;
+    width: 300px;
+    padding: 30px;
+    border: 6px ridge plum;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 10px 5px 10px;
+    text-shadow: 10px 10px  10px ;
+}
+
+/*次標題設定*/
+h2{
+    border: 5px dotted red;
+    border-width: 2px ;
+    border-left: 4px solid pink;
+    margin: 50px;
+    text-align: center;
+    color: bisque;
+}
+
+/*小標題設定*/
+.h-sub{
+    padding: 10px;
+    margin: 0 auto;
+    color: rgb(238, 10, 10);
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px;
+    text-shadow: 10px 10px  10px ;
+    text-align: center;
+}
+
+/*內容區塊邊框設定*/
+
+
+/*「更多介紹」連結設定*/
+
+
+/*連結圖示設定*/
+
+
+/*區塊間分隔*/
+
+
+/*文繞圖設定*/
+.imgL{
+    float: left;
+    margin-right: 30px;
+}
+
+.imgR {
+    float: right;
+    margin-left: 30px;
+}
+
+.clear{
+    clear: both;
+}
+/*圓形圖片設定*/
+.round{
+    border-radius: 50%;
+}
+.photo {
+    width: 480px;
+    height: 360px;
+}
+
+/*利用偽元素設定樣式*/
+.clearfix::after{
+    content:"";
+    display: block;
+    clear:both;
+}
