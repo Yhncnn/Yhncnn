@@ -1,0 +1,169 @@
+img {
+    box-shadow: 5px 5px 5px rgb(150, 210, 232);
+    margin: 30zpx;        
+}
+
+.numbers {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ded972;
+    color: #76aec7;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b5d4cd;
+    color: rgb(32, 85, 190);
+    z-index: 10;
+    padding: 15px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: rgb(6, 55, 69);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #b94b7a;
+}
+
+header nav ul li a img.logo {
+    width: 150px;
+    height: auto;
+}
+
+section {
+    padding: 100px 20px;
+    margin: 20px;
+    background-color: rgb(199, 225, 223);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(55, 207, 103, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.content img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+.content a {
+    text-decoration: none;
+    color: #394370;
+}
+
+.content a:hover {
+    color: #fc0202;
+}
+
+.fade-in {
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:white;
+    color: rgb(255, 0, 0);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* 作品區塊樣式 */
+#works {
+    padding: 50px 20px;
+    background-color: #63aefa;
+    text-align: center;
+}
+
+#works h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #333;
+}
+
+#works .card {
+    margin: 20px 0;
+    border: 1px solid #c73131;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(211, 80, 80, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#works .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(200, 16, 16, 0.2);
+}
+
+#works .card img {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+#works .card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#works .btn-primary {
+    background-color: #1ca256;
+    border: none;
+    color: rgb(175, 18, 18);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+#works .btn-primary:hover {
+    background-color: #0056b3;
+}
