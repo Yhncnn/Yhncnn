@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自我介紹</title>
+    <style>
+        /* 重置頁面基本樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffefaa;
+            /* 淺粉色背景，甜蜜感 */
+            font-family: Arial, sans-serif;
+            color: #37d7ff7a;
+            /* 暗粉紫色文字 */
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80%;
+            gap: 20px;
+        }
+
+        /* 左側區域，照片和姓名 */
+        .left-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 35%;
+            /* 左側區域占據35%的寬度 */
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 照片區域 */
+        .photo {
+            width: 350px;
+            /* 放大照片 */
+            height: 350px;
+            /* 放大照片 */
+            border-radius: 100%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            /* 增加與姓名的間距 */
+        }
+
+        /* 姓名區域 */
+        .name p {
+            font-size: 28px;
+            color: #54ffaf;
+            /* 淺粉色文字 */
+            font-weight: bold;
+        }
+
+        /* 右側自我介紹區域 */
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex: 1;
+            /* 讓自我介紹區域占滿剩餘空間 */
+            letter-spacing: 1px;
+            /* 增加字距 */
+            text-align: left;
+            padding: 70px;
+            overflow-y: auto;
+        }
+
+        .intro p {
+            font-size: 16px;
+            color: #6a3d56;
+            /* 暗紅色字體 */
+            margin-bottom: 10px;
+            line-height: 1.9;
+        }
+
+        /* 聯絡資訊區域 */
+        .contact-info {
+            text-align: center;
+            font-size: 18px;
+            color: #6c4f7d;
+            /* 暗紫色文字 */
+            padding: 20px;
+
+            width: 100%;
+            border-top: 1px solid #f9d0f2;
+            /* 淡粉色邊框 */
+        }
+
+        /* 螢幕寬度小於1024px */
+        @media (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                /* 在中型螢幕下，左右排列改為上下排列 */
+                align-items: center;
+            }
+
+            .left-side {
+                width: 100%;
+                /* 小螢幕時，讓左側區域自適應寬度 */
+                margin-bottom: 20px;
+            }
+
+            .intro {
+                text-align: center;
+                /* 自我介紹區域文字居中 */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- 左側區域，照片和姓名 -->
+        <div class="left-side">
+            <img src="img/7n.jfif" alt="照片" class="photo">
+            <div class="name">
+                <p>謝其恩</p>
+            </div>
+        </div>
+
+        <!-- 右側自我介紹區域 -->
+        <div class="intro">
+            <p>年齡:19歲</p>
+            <p>興趣:打球</p>
+            <p>學校:亞東科技大學</p>
+            <p>科系:資訊管理系</p>
+            <p>職業:餐飲</p>
+
+        </div>
+    </div>
+
+    <!-- 聯絡資訊區域 -->
+    <div class="contact-info">
+        <p>📞 電話:0917876913</p>
+        <p>📍 地址:秘密不告訴你</p>
+        <p>📧 聯絡我們:112111214@mail.aeust.edu.tw</p>
+    </div>
+
+</body>
+
+</html>
